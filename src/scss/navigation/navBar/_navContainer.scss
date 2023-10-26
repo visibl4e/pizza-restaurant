@@ -1,0 +1,147 @@
+@import "../../fonts/fonts";
+@import "../../colors/colors";
+.topNav {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: block;
+  z-index: 10 !important;
+  .containerNavInfo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px 10px;
+    .navAdress {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: #ffa000;
+      }
+    }
+    .navNumber {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: #ffa000;
+      }
+    }
+    .navSchedule {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: #ffa000;
+      }
+    }
+    .navSocials {
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+      a {
+        text-decoration: none;
+
+        color: black;
+        &:hover {
+          color: #ffa000;
+        }
+      }
+    }
+  }
+  .containerNavpages {
+    background-color: $navColor;
+
+    .pagesNav {
+      height: 100px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: $text-2xl24;
+      font-weight: $fw700;
+      color: $textColor;
+      .mainName {
+        a {
+          color: $textColor;
+          font-size: 35px;
+          font-weight: normal;
+        }
+      }
+      .pagesList {
+        display: flex;
+        gap: 10px;
+        li {
+          font-size: $text-base16;
+          padding: 10px;
+
+          a {
+            color: $textColor;
+            font-weight: 500;
+            &:hover {
+              color: $hover;
+              transition: 0.25s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .containerLinks {
+    max-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .home {
+      margin-right: 10px;
+      color: $hover;
+    }
+    span {
+      margin-right: 10px;
+    }
+    .rout {
+      color: $smallText;
+    }
+  }
+  .auth {
+    background: transparent;
+    font-size: $text-base16;
+    color: $textColor;
+    &:hover {
+      color: $hover;
+      cursor: pointer;
+    }
+  }
+}
+.active {
+  color: $hover !important;
+}
+// .toggleDropdown:hover {
+//   position: relative;
+//   .dropdown {
+//     display: block;
+//   }
+// }
+// .dropdown {
+//   display: none;
+//   position: absolute;
+//   z-index: 10;
+//   transition: 0.25s ease-in-out;
+//   border-radius: 1px;
+//   li {
+//     background-color: #808080;
+//     width: 150px;
+//     &:hover {
+//       background-color: #62b6cb;
+//     }
+//     a {
+//       display: block;
+//       font-size: $text-lg18;
+//     }
+//   }
+// }

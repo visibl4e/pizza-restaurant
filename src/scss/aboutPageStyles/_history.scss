@@ -1,0 +1,45 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+@import "../footer/footer";
+.containerAbove {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+
+  .history {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+    .text {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 30px;
+      h3 {
+        font-size: $text-2xl24;
+        margin-bottom: 10px;
+        color: $navColor;
+        font-weight: normal;
+      }
+      p {
+        padding-bottom: 10px;
+        color: $navColor;
+        font-size: $text-xl20;
+      }
+    }
+  }
+}
+.containerAbove {
+  position: relative;
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

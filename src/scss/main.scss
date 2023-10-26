@@ -1,0 +1,36 @@
+@import "./navigation/navLogo/logo";
+@import "./navigation/navBar/navContainer";
+@import "./body";
+@import "./fonts/fonts";
+@import "./colors/colors";
+// @import "./aboutPageStyles/slider";
+@import "./navigation/navBar/searchFrom";
+
+@import "./footer/footer";
+@import "./aboutPageStyles/history";
+@import "./aboutPageStyles/secrificate";
+@import "./aboutPageStyles/members";
+@import "./galleryPageStyle/gallery";
+@import "./galleryPageStyle/modalPopUp";
+@import "./blogPageStyles.scss/mainBlogPage";
+@import "./blogPageStyles.scss/postPage";
+@import "./blogPageStyles.scss/postsList";
+@import "./authentification/signUp";
+@import "./authentification/userAccaunt";
+@import "./authentification/resetPassword";
+@import "./homePageStyles/homePresentSection";
+@import "./homePageStyles/certificatePageSection";
+@import "./homePageStyles/hotOfferPageSection";
+@import "./homePageStyles/teamPageSection";
+@import "./homePageStyles/reviewPageSection";
+@import "./homePageStyles/reommendsPageSection";
+@import "./homePageStyles/orderPageSection";
+@import "./contactsPageStyles/contactsDataSection";
+@import "./contactsPageStyles/contactsGoogleMapStyles";
+@import "./contactsPageStyles/getInTouchSection";
+@import "./contactsPageStyles/contactsFormSection";
+#root {
+  position: relative;
+  z-index: 0;
+  background-color: $lightSlate;
+}

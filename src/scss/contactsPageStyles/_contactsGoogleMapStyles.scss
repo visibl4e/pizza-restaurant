@@ -1,0 +1,13 @@
+.contactGoogleMapSection {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  .mapContainer {
+    max-width: 1600px;
+    margin: 0 auto;
+    .googleMap {
+      width: 100%;
+      height: 450px;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.blogContentWrapContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  .rowBlog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    .primary {
+      width: 66.6%;
+      .main {
+        display: block;
+        height: auto;
+      }
+    }
+    .secondary {
+      padding-top: 30px;
+      width: 29%;
+      .searchTwo {
+        .searchForm {
+          display: flex;
+          align-items: center;
+          .label {
+            width: 90%;
+            .input {
+              padding: 8px 12px;
+              width: 90%;
+              border: 1px solid $smallText;
+              border-radius: 5px;
+            }
+          }
+          .searchBtn {
+            padding: 8px;
+            color: white;
+            font-size: $text-base16;
+            background-color: $hover;
+            border-radius: 5px;
+            margin-left: 12px;
+            cursor: pointer;
+          }
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+      .recentPosts {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid $smallText;
+        .widgetTitle {
+          color: $navColor;
+          font-size: $text-2xl24;
+          font-weight: normal;
+          margin-bottom: 40px;
+        }
+        ul {
+          li {
+            margin-bottom: 20px;
+            a {
+              color: $navColor;
+              font-size: $text-base16;
+              font-weight: normal;
+              &:hover {
+                color: $hover;
+                transition: 0.25s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+      .archivesTwo {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid $smallText;
+        .widgetTitle {
+          color: $navColor;
+          font-size: $text-2xl24;
+          font-weight: normal;
+          margin-bottom: 40px;
+        }
+        ul {
+          li {
+            margin-bottom: 20px;
+            a {
+              color: $navColor;
+              font-size: $text-base16;
+              font-weight: normal;
+              &:hover {
+                color: $hover;
+                transition: 0.25s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+      .categoriesTwo {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid $smallText;
+        .widgetTitle {
+          color: $navColor;
+          font-size: $text-2xl24;
+          font-weight: normal;
+          margin-bottom: 40px;
+        }
+        ul {
+          li {
+            margin-bottom: 20px;
+            a {
+              color: $navColor;
+              font-size: $text-base16;
+              font-weight: normal;
+              &:hover {
+                color: $hover;
+                transition: 0.25s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

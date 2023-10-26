@@ -1,0 +1,41 @@
+@import "../fonts/fonts";
+@import "../colors/colors";
+
+.postContainer {
+  article {
+    border-bottom: 1px solid $slate;
+    padding-bottom: 40px;
+    .commentRow {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .commentsBtn {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        background-color: $slate;
+        border-radius: 5px;
+        color: white;
+        span {
+          margin-left: 5px;
+        }
+        &:hover {
+          background-color: $hover;
+          transition: 0.15s ease-in-out;
+        }
+      }
+      .infoBtn {
+        padding: 8px 12px;
+        background-color: $hover;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        &:hover {
+          opacity: 0.6;
+          transition: 0.15s ease-in-out;
+        }
+      }
+    }
+  }
+}

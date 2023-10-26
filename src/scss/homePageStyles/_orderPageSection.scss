@@ -1,0 +1,53 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.homeOrderSection {
+  width: 100%;
+  .orderContainer {
+    max-width: 1600px;
+    margin: 0 auto;
+    .context {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 1600px;
+    }
+    .textOrder {
+      padding-left: 200px;
+      position: absolute;
+
+      h2 {
+        color: $hover;
+        margin-bottom: 20px;
+        font-weight: normal;
+        font-size: $text-3xl30;
+      }
+      p {
+        width: 600px;
+        font-size: $text-lg18;
+        line-height: 1.3;
+        color: $navColor;
+      }
+      button {
+        text-decoration: none;
+        position: relative;
+        margin-top: 50px;
+        padding: 10px;
+        background-color: #ffa000;
+        border-radius: 10px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        a {
+          color: white;
+        }
+        &:hover {
+          transition: 0.25s ease-in;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

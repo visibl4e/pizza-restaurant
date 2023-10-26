@@ -1,0 +1,92 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.containerContacts {
+  .contactsDataSection {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .contactUs {
+      display: block;
+      width: 30%;
+
+      h2 {
+        font-size: $text-3xl30;
+        font-weight: 300;
+        color: $navColor;
+        margin-bottom: 20px;
+      }
+      .address {
+        display: block;
+
+        p {
+          font-size: $text-lg18;
+          color: $navColor;
+          line-height: 1.5;
+        }
+        span {
+          font-size: $text-lg18;
+          color: $navColor;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+      }
+
+      a {
+        line-height: 1.5;
+        margin-top: 10px;
+        color: $hover;
+        font-size: $text-lg18;
+        span {
+          font-size: $text-lg18;
+          color: $navColor;
+        }
+        &:hover {
+          color: $navColor;
+          transition: 0.15s ease-in-out;
+        }
+      }
+    }
+    .openingHours {
+      display: block;
+      width: 30%;
+
+      h2 {
+        font-size: $text-3xl30;
+        font-weight: 300;
+        color: $navColor;
+        margin-bottom: 20px;
+      }
+      .days {
+        display: block;
+        margin-bottom: 20px;
+        .workWeekDays {
+          font-size: $text-lg18;
+          color: $navColor;
+        }
+        .weekendDays {
+          font-size: $text-lg18;
+          color: $navColor;
+          line-height: 1.5;
+        }
+      }
+      p {
+        margin-bottom: 5px;
+        font-size: $text-lg18;
+        color: $navColor;
+      }
+      a {
+        font-size: $text-lg18;
+        line-height: 1.5;
+        color: $hover;
+        &:hover {
+          color: $navColor;
+          transition: 0.15s ease-in-out;
+        }
+      }
+    }
+  }
+}

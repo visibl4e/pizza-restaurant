@@ -1,0 +1,95 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.postContainer {
+  margin-bottom: 20px;
+  .post {
+    header {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .entryTtile {
+        margin-bottom: 15px;
+        a {
+          text-decoration: none;
+          font-size: $text-3xl30;
+          font-weight: normal;
+          color: $navColor;
+          &:hover {
+            color: $hover;
+            transition: 0.25s ease-in-out;
+          }
+        }
+      }
+      .entryMeta {
+        span {
+          margin-right: 10px;
+          time {
+            margin-left: 5px;
+          }
+          a {
+            color: $navColor;
+            &:hover {
+              color: $hover;
+              transition: 0.25s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+    figure {
+      a {
+        img {
+          border-radius: 10px;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .entryContent {
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+        height: auto;
+      }
+      p {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        line-height: 1.3;
+        color: $navColor;
+        font-size: $text-xl20;
+      }
+      .ingredients {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 120px;
+        margin-right: 120px;
+        .entryHeader {
+          position: relative;
+          color: $navColor;
+          font-size: $text-2xl24;
+          font-weight: normal;
+        }
+        ul {
+          margin-top: 5px;
+          text-align: left;
+          li {
+            line-height: 1.3;
+            color: $navColor;
+            font-size: $text-xl20;
+          }
+        }
+      }
+    }
+    .entryHeader:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      bottom: 1px;
+      background-color: $smallText;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.homeReviewsSection {
+  width: 100%;
+  margin-top: 90px;
+  .reviewsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+
+    .title {
+      text-align: center;
+      h2 {
+        font-size: $text-2xl24;
+        color: $navColor;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: $text-xl20;
+        color: $navColor;
+      }
+    }
+    .reviews {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .reviewCard {
+        width: 350px;
+        gap: 20px;
+        margin-top: 20px;
+        text-align: center;
+        span {
+          font-size: 35px;
+          color: $hover;
+        }
+        p {
+          font-size: $text-xl20;
+          color: $navColor;
+          line-height: 1.3;
+          margin-bottom: 15px;
+        }
+        img {
+          margin-top: 20px;
+          width: 30%;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+        .name {
+          margin-top: 5px;
+          font-size: $text-xl20;
+          color: $navColor;
+        }
+        .posted {
+          font-size: $text-sm14;
+          color: $navColor;
+        }
+      }
+    }
+  }
+}

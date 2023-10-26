@@ -1,0 +1,35 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.getInTouchSection {
+  width: 100%;
+  margin-bottom: 50px;
+  .getInTouchContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+
+    gap: 40px;
+    .textBlock {
+      display: block;
+      width: 30%;
+      h2 {
+        font-size: $text-3xl30;
+        font-weight: 300;
+        color: $navColor;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: $text-lg18;
+        color: $navColor;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+    }
+
+    .formContacts {
+      width: 70%;
+    }
+  }
+}

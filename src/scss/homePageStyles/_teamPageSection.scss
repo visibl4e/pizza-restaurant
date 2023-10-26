@@ -1,0 +1,68 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.homeTeamSection {
+  width: 100%;
+  margin-top: 90px;
+  .teamContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: $text-2xl24;
+      color: $navColor;
+    }
+    .contextContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+      .cardMember {
+        gap: 10px;
+
+        img {
+          width: 300px;
+          height: auto;
+          margin-bottom: 15px;
+          object-fit: contain;
+        }
+        h3 {
+          text-align: center;
+          margin-bottom: 15px;
+          color: $navColor;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 15px;
+          color: $slate;
+          font-size: $text-sm14;
+        }
+        .linkMember {
+          text-align: center;
+
+          a {
+            margin-right: 10px;
+            color: black;
+            span {
+            }
+            &:hover {
+              color: $hover;
+              transition: 0.15s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#card1:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#card2:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#card3:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

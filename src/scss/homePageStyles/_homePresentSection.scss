@@ -1,0 +1,73 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.homePresentSection {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  margin-top: 40px;
+  z-index: -1;
+  .homeContainer {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 1600px;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .infoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: absolute;
+      color: wheat;
+      .infoRow {
+        .motto {
+          color: $textColor;
+          font-size: 80px;
+          font-weight: 300;
+          margin-bottom: 10px;
+        }
+        .smText {
+          color: $textColor;
+          font-size: 40px;
+          margin-bottom: 40px;
+        }
+        .smTextLink {
+          width: 700px;
+          font-size: 26px;
+          color: $textColor;
+          line-height: 1.1;
+          margin-bottom: 100px;
+          a {
+            text-decoration: none;
+            color: $hover;
+            &:hover {
+              color: $textColor;
+            }
+          }
+        }
+        .reservationLink {
+          padding: 20px 40px;
+          background-color: $hover;
+          border-radius: 5px;
+          color: $textColor;
+          font-weight: $fw700;
+          &:hover {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px;
+          }
+        }
+      }
+    }
+  }
+}
+h6 {
+  margin-top: 500px;
+}
