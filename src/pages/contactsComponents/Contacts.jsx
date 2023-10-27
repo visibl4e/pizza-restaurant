@@ -2,16 +2,37 @@ import { Link } from "react-router-dom";
 import { GoogleMap } from "./GoogleMap";
 import { FormGroup } from "./FormGroup";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+// import { ModalOfSubmit } from "./modalOfSubmit";
+// import { useEffect } from "react";
+
 export function Contacts() {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
+  // useEffect(() => {
+  //   if (onSubmit) {
+  //     return <ModalOfSubmit />;
+  //   }
+  // }, [onSubmit]);
+
   function onSubmit(data) {
-    console.log(data);
-    alert("Succses");
+    emailjs
+      .send("service_dqihycp", "template_oa65rui", data, "7LismB5TQWhx6cctq")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    reset();
   }
 
   return (
@@ -73,6 +94,7 @@ export function Contacts() {
                   <label className="labelForm " htmlFor="name">
                     Name
                     <input
+                      name="name"
                       className="inputForm "
                       type="name"
                       id="name"
@@ -87,29 +109,81 @@ export function Contacts() {
                     />
                   </label>
                 </FormGroup>
-                <FormGroup>
+                <FormGroup errorMessage={errors?.phone?.message}>
                   <label className="labelForm " htmlFor="phone">
                     Phone
-                    <input className="inputForm " type="tel" id="phone" />
+                    <input
+                      className="inputForm "
+                      name="phone"
+                      type="tel"
+                      id="phone"
+                      {...register("phone", {
+                        minLength: {
+                          value: 7,
+                          message: "Must be at least 7 figures",
+                        },
+                        validate: {
+                          isNotEmpty: (value) => {
+                            if (value.length === 0) {
+                              return "Enter your phone number";
+                            }
+                          },
+                          isNumber: (value) => {
+                            if (!value.match(/[0-9]/)) {
+                              return "The field should contain only numbers";
+                            }
+                          },
+                        },
+                      })}
+                    />
                   </label>
                 </FormGroup>
-                <FormGroup>
+                <FormGroup errorMessage={errors?.email?.message}>
                   <label className="labelForm" htmlFor="email">
                     Email
-                    <input className="inputForm " type="email" id="email" />
+                    <input
+                      className="inputForm "
+                      type="email"
+                      id="email"
+                      name="email"
+                      {...register("email", {
+                        validate: {
+                          isNotEmpty: (value) => {
+                            if (value.length == "") {
+                              return "Enter your email";
+                            }
+                          },
+                          validEmail: (value) => {
+                            if (!value.match("@")) {
+                              return "Please enter a valid email";
+                            }
+                          },
+                        },
+                      })}
+                    />
                   </label>
                 </FormGroup>
               </div>
-              <FormGroup>
+              <FormGroup errorMessage={errors?.comment?.message}>
                 <textarea
-                  className="yourMessage "
+                  className="yourComment "
+                  name="comment"
                   placeholder="Your message"
+                  {...register("comment", {
+                    validate: {
+                      isNotEmpty: (value) => {
+                        if (value.length == "") {
+                          return "Message is required!";
+                        }
+                      },
+                    },
+                  })}
                 ></textarea>
               </FormGroup>
-
               <button className="btnForm" type="submit">
                 Submit
               </button>
+              {/* {onSubmit && <ModalOfSubmit />} */}
             </form>
           </div>
         </section>
