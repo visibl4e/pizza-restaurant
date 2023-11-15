@@ -1,0 +1,76 @@
+{
+  "blogs": [
+    {
+      "header": "Non-Meat Pizza with Shrimps and Asparagus!",
+      "id": 1,
+      "image": "https://ld-wp.template-help.com/wordpress_prod-23791/v1/wp-content/uploads/2019/04/image3-1170x520.jpg",
+      "description": "How necessary is it for you to be food compatible with your other? Would you break up (okay, too extreme, let’s say fight) with someone over pizza toppings? Would you truly be compatible with someone if they were an avid meat eater and you were a strict   vegan? Luckily, Mike and I agree on most food things (aside from tofu: I love it, he pretty much doesn’t love it), but...",
+      "data": "April 29, 2023",
+      "imageFirst": "https://ld-wp.template-help.com/wordpress_prod-23791/v1/wp-content/uploads/2019/04/image3-1170x520.jpg",
+      "descriptionFirst": " How necessary is it for you to be food compatible with your other? Would you break up (okay, too extreme, let’s say fight) with someone over pizza toppings? Would you truly be compatible with someone if they were an avid meat eater and you were a strict vegan? Luckily, Mike and I agree on most food things (aside from tofu: I love it, he pretty much doesn’t love it), but I think that I would be intrigued if he didn’t like eating the same things as me. We actually had a long discussion about it with a friend and he and Mike both agreed that they’d find it supremely difficult to   be with someone who didn’t share their basic taste in food.",
+      "imageSecond": "https://ld-wp.template-help.com/wordpress_62028/wp-content/uploads/2016/05/image1.jpg",
+      "descriptionSecond": "I guess it’s possibly true, because a little while ago one of my girlfriends started dating someone new and after her new man’s   true food colors shone through, it was kind of sort of over. It went like this: after a couple of months of dates out, they planned a romantic dinner in, complete with a movie and delivery pizza. The dude ordered a shrimp pizza, which apparently was a no-no for my girlfriend. I didn’t really get it though — what’s ong with shrimp on pizza?",
+      "imageThird": "https://www.marchespublics-mtl.com/wp-content/uploads/MPM_Recette_Pizza_Asperges_Crevettes.jpg",
+      "descriptionThird": "Apparently there’s something very wrong with it. I guess people have food deal breakers because a couple of weeks after the shrimp pizza incident, my girlfriend ended it. She claims it had nothing  to do with the shrimp pizza incident, but it seemed too coincidental to me. I actually liked the guy and thought he was a good fit for her – it was really too bad. And there’s nothing wrong with shrimp on pizza! To prove it to her, I came up with an awesome shrimp pizza. It has a mix of spring flavours: crisp asparagus, lemon zest and flat leaf parsley. It’s totally delicious and would bring anyone over to the shrimp pizza side!",
+
+      "ingredients": [
+        "Oil",
+        "2 cloves garlic, sliced",
+        "12 medium shrimp, peeled and deveined, tails left on if preferred",
+        "Salt and freshly ground pepper",
+        "Juice of 1/2 lemon",
+        "1 ball no-knead pizza dough",
+        "1/3-1/2 cup shredded mozzarella cheese",
+        "3-4 stalks asparagus, ends trimmed and cut into 1 inch pieces",
+        "Crushed red pepper, to taste",
+        "Zest of 1 lemon",
+        "1 tablespoon chopped flat leaf parsley",
+        "1 tablespoon parmesan"
+      ]
+    },
+
+    {
+      "header": "Grilled Cheese Pizza Recipe",
+      "id": 2,
+      "image": "https://thumbs.dreamstime.com/b/pizza-rustic-italian-mozzarella-cheese-basil-leaves-35669930.jpg",
+      "description": "This grilled cheese is made with hearty Italian dough that gets slathered with garlic butter, pepperoni, and lots of mozzarella cheese...",
+      "data": "September 12, 2023",
+      "imageFirst": "https://ld-wp.template-help.com/wordpress_prod-23791/v1/wp-content/uploads/2019/04/image4-1170x520.jpg",
+      "descriptionFirst": "This grilled cheese is made with hearty Italian dough that gets slathered with garlic butter, pepperoni, and lots of mozzarella cheese. The pizza also has a Parmesan cheese crust that is phenomenal. Serve pizza sauce on the side for dunking and you are in pizza AND grilled cheese heaven!",
+      "imageSecond": "https://ld-wp.template-help.com/wordpress_62028/wp-content/uploads/2016/05/image1.jpg",
+      "descriptionSecond": "You can easily customize this grilled cheese by using your favorite pizza toppings as sandwich fillings. Here are a few ideas. Use cooked sausage instead of pepperoni. Make a meat lovers grilled cheese by using pepperoni, sausage, bacon, and ham. If you want a vegetarian pizza grilled cheese, use sautéd mushrooms, peppers, artichokes, or spinach. Try pineapple slices and Canadian bacon. Make a classic margherita pizza grilled cheese with a little pizza sauce, mozzarella cheese, and fresh basil. Kick up the heat and add crushed red pepper flakes, jalapeño slices, or a drizzle of hot honey.",
+      "imageThird": "https://pbs.twimg.com/media/CtDvz_dUEAAAmPZ.jpg",
+      "descriptionThird": "",
+      "ingredients": [
+        "2 tablespoons salted butter, softened",
+        "1/4 teaspoon garlic powder",
+        "1/4 teaspoon Italian seasoning",
+        "1/4 cup freshly grated Parmesan cheese, divided",
+        "2/3 to 1 cup shredded mozzarella cheese, depends on the size of your bread",
+        "15 to 20 slices pepperoni",
+        "Pizza sauce, for serving (can use marinara sauce)"
+      ]
+    },
+    {
+      "header": "Cooking Some Mini Non-Kneading Pizzas",
+      "id": 3,
+      "image": "https://zenaskitchen.com/wp-content/uploads/2022/09/easy-homemade-pizza.jpg",
+      "description": "a flat, open-faced baked pie of Italian origin, consisting of a thin layer of bread dough topped with spiced tomato sauce and cheese, often garnished with anchovies, sausage slices, mushrooms, etc.",
+      "data": "October 22, 2023",
+      "imageFirst": "https://zenaskitchen.com/wp-content/uploads/2022/09/easy-homemade-pizza.jpg",
+      "descriptionFirst": "If you are sometimes in the mood for pizza but too busy or tired to knead the dough, I have some good news. It is perfectly possible to make a delicious tasting pizza with a beautifully chewy crust without any kneading whatsoever. I actually don’t mind kneading, but sometimes it’s just too much effort especially if, like me, you spend too much time in the kitchen already.",
+      "imageSecond": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2022/07/1280-7735-800x1200.jpg",
+      "descriptionSecond": "All this recipe wants from you is to mix three dry ingredients together in a bowl with some water, cover it and leave well alone for hours. I often do it just before I go to sleep knowing that I will have a ready pizza dough by dinner time. It’s so simple!",
+      "descriptionThird": "I may be wrong, but what I think is at play here is a chemical process known as autolyse combined with some yeast action. Autolyse is a common technique used in bread baking and it’s the act of combining flour and water and letting them do their thing – during the resting time gluten forms and the dough gathers strength and elasticity. To be honest, you don’t need to concern yourself with why it works, it just does.",
+      "ingredients": [
+        "1 tsp instant dried yeast",
+        "500 g / 4 cups AP flour, plus extra for dusting",
+        "12 g / 2 tsp salt",
+        "approx. 360 ml / 1½ cups water",
+        "semolina flour* (optional)",
+        "Bacon",
+        "Spinach"
+      ]
+    }
+  ]
+}

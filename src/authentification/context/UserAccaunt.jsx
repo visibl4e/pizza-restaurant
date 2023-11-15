@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-export function UserAccaunt() {
+import { useAuth } from "./AuthContext";
+import { FaRegUser } from "react-icons/fa";
+
+import { Link } from "react-router-dom";
+export function UserAccaunt({ isHovering }) {
+  const { logoutFn, currentUser } = useAuth();
+
   return (
     <>
-      <div className="profileContainer">
-        <h3 className="userName">User</h3>
-      </div>
+      {currentUser && (
+        <div
+          className={`profileContainer ${
+            isHovering ? "activeProfileDropDown" : ""
+          }`}
+        >
+          <ul>
+            <li>
+              <div className="profileBox">
+                <h3>Profile</h3>
+                <FaRegUser />
+              </div>
+            </li>
+
+            {currentUser ? <li onClick={logoutFn}> Sign-out</li> : ""}
+
+            <li>{currentUser.email}</li>
+            <li>
+              <Link to="/terms">Terms of service</Link>
+            </li>
+            <li>
+              <Link to="/policy">Privacy</Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </>
   );
 }

@@ -3,22 +3,18 @@ import { GoogleMap } from "./GoogleMap";
 import { FormGroup } from "./FormGroup";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-// import { ModalOfSubmit } from "./modalOfSubmit";
-// import { useEffect } from "react";
+import { ModalOfSubmit } from "./modalOfSubmit";
+import { useState } from "react";
 
 export function Contacts() {
+  const [modalActive, setModalActive] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
   } = useForm();
-
-  // useEffect(() => {
-  //   if (onSubmit) {
-  //     return <ModalOfSubmit />;
-  //   }
-  // }, [onSubmit]);
 
   function onSubmit(data) {
     emailjs
@@ -33,6 +29,7 @@ export function Contacts() {
       );
 
     reset();
+    setModalActive((modalActive) => !modalActive);
   }
 
   return (
@@ -183,7 +180,8 @@ export function Contacts() {
               <button className="btnForm" type="submit">
                 Submit
               </button>
-              {/* {onSubmit && <ModalOfSubmit />} */}
+
+              <ModalOfSubmit active={modalActive} setActive={setModalActive} />
             </form>
           </div>
         </section>

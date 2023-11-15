@@ -13,8 +13,8 @@
 @import "./galleryPageStyle/gallery";
 @import "./galleryPageStyle/modalPopUp";
 @import "./blogPageStyles.scss/mainBlogPage";
-@import "./blogPageStyles.scss/postPage";
-@import "./blogPageStyles.scss/postsList";
+@import "./blogPageStyles.scss/postsPage";
+@import "./blogPageStyles.scss/asideList";
 @import "./authentification/signUp";
 @import "./authentification/userAccaunt";
 @import "./authentification/resetPassword";
@@ -33,5 +33,5 @@
 #root {
   position: relative;
   z-index: 0;
-  background-color: $lightSlate;
+  background-color: white;
 }

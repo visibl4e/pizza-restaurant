@@ -17,12 +17,14 @@ import { MdOutlineLogin } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { UserAccaunt } from "../authentification/context/UserAccaunt";
 import { useAuth } from "../authentification/context/AuthContext";
-import { useEffect } from "react";
+import { useState } from "react";
 
 export function NavLayout() {
   const { logoutFn, currentUser } = useAuth();
   const location = useLocation();
-  // // set focus to the active link on the page
+
+  // profile display info
+  const [isHovering, setIsHovering] = useState(false);
 
   return (
     <>
@@ -96,35 +98,37 @@ export function NavLayout() {
               <li>
                 <NavLink to="/shop">SHOP</NavLink>
               </li>
+
               <li>
                 <NavLink to="/cart">
                   <AiOutlineShoppingCart />
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/signUp" className="auth">
+              {!currentUser && (
+                <li className="myAccount">
+                  <NavLink to="/signUp" className="auth">
+                    <MdOutlineLogin />
+                  </NavLink>
+                </li>
+              )}
+
+              {currentUser && (
+                <li
+                  className="myAccount"
+                  onClick={() => setIsHovering(!isHovering)}
+                >
                   {currentUser ? (
                     <CgProfile
-                      className="userAccaunt"
-                      style={{ hover: <UserAccaunt /> }}
+                      className="userAccount"
+                      onClick={() => setIsHovering(!isHovering)}
                     />
                   ) : (
                     <MdOutlineLogin />
                   )}
-                </NavLink>
-              </li>
-              {currentUser ? (
-                <button
-                  className="signOutBtn"
-                  onClick={logoutFn}
-                  style={{ display: "block" }}
-                >
-                  Sign-out
-                </button>
-              ) : (
-                <button className="signOutBtn" style={{ display: "none" }}>
-                  Sign-out
-                </button>
+                  {isHovering ? <UserAccaunt isHovering={isHovering} /> : ""}
+
+                  <span>My Account</span>
+                </li>
               )}
             </ul>
           </div>

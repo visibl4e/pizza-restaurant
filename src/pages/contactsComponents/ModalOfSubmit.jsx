@@ -1,24 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 
-export function ModalOfSubmit() {
-  const [closeModal, setCloseModal] = useState(true);
-
+export function ModalOfSubmit({ active, setActive }) {
   return (
     <>
-      {closeModal && (
-        <div className="overlay" onClick={() => setCloseModal(!closeModal)}>
+      {active && (
+        <div className="overlay " onClick={() => setActive(false)}>
           <div
-            className={`modalContainer ${
-              !closeModal ? "closeModalWindow" : ""
-            }`}
+            className={`modalContainer ${active ? "openModalWindow" : ""} `}
+            onClick={(e) => e.stopPropagation()}
           >
             <img
               src="https://static-00.iconduck.com/assets.00/process-completed-symbolic-icon-2048x2048-baquwdk1.png"
               alt="completed"
             />
             <h2>Thank You!</h2>
-            <p>Your details has been successfully submitted. Thanks</p>
-            <button onClick={() => setCloseModal(!closeModal)}>Ok</button>
+            <p>Your details has been successfully submitted.</p>
+            <button onClick={() => setActive(false)}>Ok</button>{" "}
           </div>
         </div>
       )}

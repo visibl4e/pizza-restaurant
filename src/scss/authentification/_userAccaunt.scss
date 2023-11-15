@@ -1,18 +1,71 @@
 @import "../colors/colors";
 @import "../fonts/fonts";
 
-// .userAccount {
-// }
-.signOutBtn {
+.myAccount {
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  display: flex;
   background-color: rgba(255, 255, 255, 0.13);
   color: #e5e5e5;
   font-weight: 500;
   font-size: 14px;
   padding: 0 5px;
   border-radius: 5px;
-  &:hover {
-    color: $hover;
-    transition: 0, 15s ease-in-out;
-    cursor: pointer;
+
+  span {
+    margin-left: 10px;
+  }
+  .userAccaunt {
+    margin-right: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .profileContainer {
+    position: absolute;
+    margin-top: 250px;
+    z-index: 10;
+    right: 0px;
+    height: auto;
+    background-color: grey;
+
+    .profileBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .userName {
+      text-align: center;
+    }
+    ul {
+      width: 266px;
+      color: #e5e5e5;
+      li {
+        max-width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+        padding: 10px;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.13);
+        }
+      }
+    }
+  }
+}
+
+.profileContainer.activeProfileDropDown {
+  animation: growDown 500ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
   }
 }

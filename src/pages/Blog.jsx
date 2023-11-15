@@ -1,10 +1,20 @@
-import { Form, Link } from "react-router-dom";
-import { AiOutlineSearch } from "react-icons/ai";
-import { Posts } from "../components/blogComponents/Posts";
-import { PostsList } from "../components/blogComponents/PostsLists";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { AsideBlog } from "../components/blogComponents/AsideBlog";
+import { Link } from "react-router-dom";
+import { FaComments } from "react-icons/fa";
+
 export function Blog() {
-  const [button, setButton] = useState("");
+  const [blogs, setDescriptionPost] = useState(null);
+
+  useEffect(() => {
+    async function fetchBlogs() {
+      let url = "http://localhost:3000/blogs";
+      const response = await fetch(url);
+      const data = await response.json();
+      setDescriptionPost(data);
+    }
+    fetchBlogs();
+  }, [blogs]);
 
   return (
     <>
@@ -12,60 +22,57 @@ export function Blog() {
         <div className="rowBlog">
           <div className="primary">
             <main className="main">
-              <PostsList />
+              <div className="postContainer">
+                {blogs &&
+                  blogs.map((blog) => {
+                    return (
+                      <article className="post" id="post">
+                        <Link key={blog.id} to={`/blog/${blog.id}`}>
+                          <h2>{blog.header}</h2>
+                        </Link>
+
+                        <header>
+                          <h3 className="entryTtile">
+                            <Link to="/"></Link>
+                          </h3>
+                          <div className="entryMeta">
+                            <span>
+                              By <Link to="/">Admin</Link>
+                            </span>
+                            <span>
+                              In <Link to="/">Category</Link>
+                            </span>
+                            <span>
+                              Posted
+                              <time dateTime="2019-04-24T12:47:38+00:00">
+                                {blog.data}
+                              </time>
+                            </span>
+                          </div>
+                        </header>
+                        <figure>
+                          <Link to={`/blog/${blog.id}`}>
+                            <img src={blog.image}></img>
+                          </Link>
+                        </figure>
+                        <div className="entryContent">
+                          <p>{blog.description}</p>
+                        </div>
+                        <div className="commentRow">
+                          <Link className="commentsBtn" to="/">
+                            <FaComments /> <span>0</span>
+                          </Link>
+                          <Link className="infoBtn" to={`/blog/${blog.id}`}>
+                            More
+                          </Link>
+                        </div>
+                      </article>
+                    );
+                  })}
+              </div>
             </main>
           </div>
-          <aside className="secondary">
-            <aside className="searchTwo">
-              <Form className="searchForm">
-                <label className="label" htmlFor="text">
-                  <input
-                    type="text"
-                    className="input"
-                    id="email"
-                    placeholder="Enter keyword search..."
-                  />
-                </label>
-                <button
-                  type="submit"
-                  className="searchBtn"
-                  onClick={() => setButton(console.log("click"))}
-                >
-                  <AiOutlineSearch />
-                </button>
-              </Form>
-            </aside>
-            <aside className="recentPosts">
-              <h4 className="widgetTitle">RECENT POSTS</h4>
-              <ul>
-                <li>
-                  <Link to="/">Non-Meat Pizza with Shrimps and Asparagus!</Link>
-                </li>
-                <li>
-                  <Link to="/">Grilled Cheese Pizza Recipe</Link>
-                </li>
-                <li>
-                  <Link to="/">Cooking Some Mini Non-Kneading Pizzas</Link>
-                </li>
-              </ul>
-            </aside>
-            <aside className="archivesTwo">
-              <h4 className="widgetTitle">ARCHIVES</h4>
-              <ul>
-                <li>
-                  <Link to="/">April 2019</Link>
-                </li>
-              </ul>
-            </aside>
-            <aside className="categoriesTwo">
-              <h4 className="widgetTitle">CATEGORIES</h4>
-              <ul>
-                <li>
-                  <Link to="/">Oven Pizza</Link>
-                </li>
-              </ul>
-            </aside>
-          </aside>
+          <AsideBlog />
         </div>
       </div>
     </>

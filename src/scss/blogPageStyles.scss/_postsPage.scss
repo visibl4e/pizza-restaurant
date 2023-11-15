@@ -4,10 +4,29 @@
 .postContainer {
   margin-bottom: 20px;
   .post {
+    margin-top: 30px;
+    .postTitle {
+      font-size: $text-3xl36;
+      color: #575757;
+      font-weight: 400;
+    }
+    a {
+      width: auto;
+      text-decoration: none;
+      color: $navColor;
+      font-weight: $fw400;
+      h2 {
+        font-size: $text-3xl36;
+        font-weight: 400;
+      }
+      &:hover {
+        color: $hover;
+        transition: 0.15s;
+      }
+    }
     header {
-      padding-top: 20px;
       padding-bottom: 20px;
-      .entryTtile {
+      .entryTitle {
         margin-bottom: 15px;
         a {
           text-decoration: none;
