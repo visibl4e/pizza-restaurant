@@ -3,6 +3,8 @@ import { CiLocationOn } from "react-icons/ci";
 import { BiTimeFive } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneForward } from "react-icons/bs";
+import { Terms } from "../components/homeComponents/Terms";
+import { Privacy } from "../components/homeComponents/Privacy";
 
 export function FooterLayout() {
   return (
@@ -44,6 +46,10 @@ export function FooterLayout() {
                 <AiOutlineMail />
               </span>
               <Link to="info.demolink.org">info.demolink.org</Link>
+            </div>
+            <div className="conditions">
+              <Link to="/terms">Terms of Service</Link>
+              <Link to="/policy">Privacy Policy</Link>
             </div>
           </div>
           <div className="containerInstagram">

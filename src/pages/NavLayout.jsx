@@ -17,14 +17,14 @@ import { MdOutlineLogin } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { UserAccaunt } from "../authentification/context/UserAccaunt";
 import { useAuth } from "../authentification/context/AuthContext";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import { ReusableButton } from "../components/ReusableButton";
 export function NavLayout() {
   const { logoutFn, currentUser } = useAuth();
   const location = useLocation();
+  const [isHovering, setIsHovering] = useState(false);
 
   // profile display info
-  const [isHovering, setIsHovering] = useState(false);
 
   return (
     <>
@@ -145,8 +145,8 @@ export function NavLayout() {
             Some page
           </Link>
         </div>
+        <ReusableButton />
       </div>
-
       <ScrollRestoration />
       <Outlet />
     </>

@@ -121,28 +121,28 @@
 .active {
   color: $hover !important;
 }
-// .toggleDropdown:hover {
-//   position: relative;
-//   .dropdown {
-//     display: block;
-//   }
-// }
-// .dropdown {
+
+// .fixedButtonScroll {
+//   position: fixed;
+//   bottom: 50px;
+//   right: 50px;
+//   height: 50px;
+//   font-size: 40px;
+//   width: 50px;
+//   background: transparent;
+//   cursor: pointer;
+//   z-index: 40;
 //   display: none;
-//   position: absolute;
-//   z-index: 10;
-//   transition: 0.25s ease-in-out;
-//   border-radius: 1px;
-//   li {
-//     background-color: #808080;
-//     width: 150px;
-//     &:hover {
-//       background-color: #62b6cb;
-//     }
-//     a {
-//       display: block;
-//       font-size: $text-lg18;
-//     }
-//   }
+//   // bottom: 50px,
+//   // right: 50px,
+//   // height: 50px,
+//   // width: 50px,
+//   // fontSize: 40px,
+//   // background: transparent,
+//   // cursor: pointer,
+//   // zIndex: 40,
 // }
-//profile dropDown
+
+// .activeBtnScroll {
+//   display: block;
+// }

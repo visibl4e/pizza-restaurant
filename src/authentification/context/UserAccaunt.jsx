@@ -30,7 +30,7 @@ export function UserAccaunt({ isHovering }) {
               <Link to="/terms">Terms of service</Link>
             </li>
             <li>
-              <Link to="/policy">Privacy</Link>
+              <Link to="/policy">Privacy Policy</Link>
             </li>
           </ul>
         </div>

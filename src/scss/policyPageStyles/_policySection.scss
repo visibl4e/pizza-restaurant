@@ -1,0 +1,69 @@
+@import "../colors/colors";
+@import "../fonts/fonts";
+
+.privacySection {
+  margin-top: 50px;
+  width: 100%;
+  .privacyContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    h2 {
+      position: relative;
+      text-align: center;
+      color: $navColor;
+      padding-bottom: 10px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: grey;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    .termsList {
+      li {
+        margin-bottom: 10px;
+        &:hover {
+          color: $hover;
+          transition: 0.15s ease;
+          cursor: pointer;
+        }
+      }
+    }
+    .orderList {
+      li {
+        margin-bottom: 15px;
+        font-weight: 500;
+        line-height: 1.3;
+        font-size: $text-lg18;
+        color: $navColor;
+        margin-top: 7px;
+      }
+    }
+    p {
+      font-weight: 500;
+      line-height: 1.3;
+      font-size: $text-lg18;
+      color: $navColor;
+      margin-top: 7px;
+      margin-bottom: 15px;
+    }
+    span {
+      font-weight: bold;
+      color: black;
+    }
+    h3 {
+      font-weight: bold;
+      color: $hover;
+    }
+    .innerLink {
+      cursor: pointer;
+      color: $hover;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
