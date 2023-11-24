@@ -7,10 +7,6 @@
   margin-top: 50px;
   margin-bottom: 50px;
   .container {
-    max-width: 1520px;
-    margin: 0 auto;
-
-    text-align: center;
     .text {
       max-width: 1520px;
       margin: 0 auto;
@@ -31,56 +27,52 @@
       }
     }
     .gardGrid {
-      width: 100%;
-      display: inline-grid;
-      grid-template-columns: auto auto auto;
-      justify-content: center;
-      gap: 30px;
-      margin-left: 50px;
-      margin: 0 auto;
-      .card {
-        background-color: $lightSlate;
-        border-radius: 20px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        display: block;
-        justify-content: center;
-        transition: 0.25s ease-in;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      grid-column-gap: 10px;
+
+      .cardItem {
+        position: relative;
         &:hover {
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          cursor: pointer;
+          filter: brightness(50%);
+          // transition: 0.25s ease;
+          z-index: 20;
         }
         img {
+          cursor: pointer;
           object-fit: contain;
-          width: 350px;
+          width: 100%;
           height: auto;
           border-radius: 10px;
-        }
-        .text {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding-left: 20px;
-          padding-right: 20px;
-          p {
-            margin-top: 10px;
-          }
-          button {
-            margin-top: 10px;
-            padding: 10px;
-            background-color: $hover;
-            border-radius: 10px;
-            color: white;
-            font-weight: 600;
-            &:hover {
-              cursor: pointer;
-
-              transition: 0.25s ease-in;
-              opacity: 0.6;
-              font-weight: 600;
-            }
-          }
+          z-index: 20;
         }
       }
     }
   }
+}
+.zoomOut {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: rgb(204, 197, 197);
+  font-weight: bold;
+  cursor: pointer;
+  visibility: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  transition: 0.1s ease;
+}
+.zoomIn {
+  transform: scale(1.4) translate(-50%, -50%);
+  transition: 0.1s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: rgb(232, 229, 229);
+  font-weight: bold;
+  cursor: pointer;
+  visibility: visible;
+  z-index: 100;
 }

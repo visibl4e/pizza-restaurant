@@ -32,10 +32,14 @@ export function ReusableButton() {
           fontSize: "40px",
           background: "transparent",
           cursor: "pointer",
-          zIndex: "40",
+          zIndex: "120",
         }}
       >
-        <FaCircleArrowUp style={{ color: "green" }} />
+        <FaCircleArrowUp
+          style={{
+            color: "grey",
+          }}
+        />
       </button>
       ;
     </>

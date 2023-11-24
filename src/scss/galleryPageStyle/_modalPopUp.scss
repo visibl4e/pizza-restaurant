@@ -5,54 +5,97 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  .overlay {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 102;
+  .galleryOverlay {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
     background-color: rgb(0, 0, 0, 0.2);
-    cursor: initial;
-  }
-}
-.modalContent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.4;
-  background-color: $lightSlate;
-  padding: 14px 28px;
-  border-radius: 3px;
-  max-width: 600px;
-  min-width: 300px;
-  border-radius: 20px;
-  display: flex;
-
-  .modalText {
-    display: block;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     align-items: center;
-    text-align: left;
-    margin-left: 10px;
-    span {
-      margin-right: 10px;
+    justify-content: center;
+    z-index: 102;
+  }
+  .closeModal {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    margin-right: 50px;
+    font-size: 40px;
+    background: transparent;
+    color: grey;
+    font-weight: bold;
+    z-index: 104;
+    &:hover {
+      transition: 0.25s;
+      color: wheat;
     }
-    p {
-      border-bottom: 1px solid grey;
-      margin-top: 0;
-      margin-bottom: 10px;
-      &:hover {
-        box-shadow: 0 3px 1px -2px gray;
-      }
+  }
+  .previousBtn {
+    cursor: pointer;
+    font-size: 70px;
+    z-index: 1000;
+    color: grey;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-left: 40px;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    &:hover {
+      transition: 0.25s;
+      color: wheat;
+    }
+  }
+  .nextBtn {
+    z-index: 1000;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 40px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 70px;
+    color: grey;
+    background-color: transparent;
+    &:hover {
+      transition: 0.25s;
+      color: wheat;
+    }
+  }
+  .modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 103;
+
+    img {
+      object-fit: contain;
+      width: 700px;
+      height: auto;
     }
   }
 }
 
-.closeModal {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  padding: 5px 7px;
+@keyframes ScaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.activeModal {
+  animation: ScaleUp 0.3s forwards;
 }

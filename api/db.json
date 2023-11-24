@@ -72,5 +72,44 @@
         "Spinach"
       ]
     }
+  ],
+  "gallery": [
+    {
+      "img": "https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 1
+    },
+    {
+      "img": "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 2
+    },
+    {
+      "img": "https://images.pexels.com/photos/3915855/pexels-photo-3915855.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 3
+    },
+    {
+      "img": "https://images.pexels.com/photos/1049626/pexels-photo-1049626.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 4
+    },
+    {
+      "img": "https://images.pexels.com/photos/1878346/pexels-photo-1878346.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 5
+    },
+    {
+      "img": "https://images.pexels.com/photos/1435903/pexels-photo-1435903.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 6
+    },
+    {
+      "img": "https://images.pexels.com/photos/1437810/pexels-photo-1437810.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 7
+    },
+
+    {
+      "img": "https://images.pexels.com/photos/2918521/pexels-photo-2918521.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 8
+    },
+    {
+      "img": "https://images.pexels.com/photos/1082342/pexels-photo-1082342.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 9
+    }
   ]
 }
