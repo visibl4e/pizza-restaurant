@@ -20,14 +20,16 @@ export function Gallery() {
 
   //
   const nextSlideHandler = () => {
-    slideNumber + 1 === pizzaGallery.length
-      ? setSliderNumber(0)
-      : setSliderNumber(slideNumber + 1);
+    setSliderNumber((index) => {
+      if (index === pizzaGallery.length - 1) return 0;
+      return index + 1;
+    });
   };
   const previousSlideHandler = () => {
-    slideNumber === 0
-      ? setSliderNumber(pizzaGallery.length - 1)
-      : setSliderNumber(slideNumber - 1);
+    setSliderNumber((index) => {
+      if (index === 0) return pizzaGallery.length - 1;
+      return index - 1;
+    });
   };
   //toggle modal on index card number
   const handleOpenCard = (index) => {
@@ -75,6 +77,8 @@ export function Gallery() {
                         pageSlider={pizzaGallery[slideNumber].img}
                         previousSlideHandler={previousSlideHandler}
                         nextSlideHandler={nextSlideHandler}
+                        pizzaGallery={pizzaGallery}
+                        slideNumber={slideNumber}
                       />
                     )}
                   </>

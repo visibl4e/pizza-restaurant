@@ -1,17 +1,27 @@
-import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
+import React, { useEffect, useRef } from "react";
+
 export function Modal({
   active,
   setActive,
   pageSlider,
   previousSlideHandler,
   nextSlideHandler,
+  pizzaGallery,
+  slideNumber,
 }) {
-  // function clickPropagation(e) {
-  //   e.stopPropagation();
-  // }
+  // const timeRef = useRef(null);
+  // useEffect(() => {
+  //   //clear the timeout if wwe click on next/priveous buttons
+  //   if (timeRef.current) {
+  //     clearTimeout(timeRef.current);
+  //   }
+  //   console.log("use effect");
+  //   timeRef.current = setTimeout(() => {
+  //     nextSlideHandler();
+  //   }, 3000);
 
+  //   return () => clearTimeout(timeRef.current);
+  // }, [nextSlideHandler]);
   return (
     <>
       <div className={active ? "modal activeModal" : "modal"}>
@@ -29,7 +39,23 @@ export function Modal({
           &times;
         </button>
         <div className="modalContent" onClick={(e) => e.stopPropagation()}>
-          <img src={pageSlider} alt="" />
+          <div className="carousel">
+            {pizzaGallery &&
+              pizzaGallery.map((image) => {
+                return (
+                  <>
+                    <div className="t">
+                      <img
+                        key={image}
+                        src={image.img}
+                        alt=""
+                        style={{ translate: `${-100 * slideNumber}%` }}
+                      />
+                    </div>
+                  </>
+                );
+              })}
+          </div>
         </div>
       </div>
     </>

@@ -73,16 +73,21 @@
     }
   }
   .modalContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 103;
-
-    img {
-      object-fit: contain;
-      width: 700px;
-      height: auto;
+    .carousel {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      display: flex;
+      overflow-x: hidden;
+      width: 50%;
+    }
+    .t {
+      img {
+        transition: translate 0.4s;
+        object-fit: cover;
+        width: 770px;
+        height: auto;
+      }
     }
   }
 }
