@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 export function Modal({
   active,
@@ -44,7 +44,7 @@ export function Modal({
               pizzaGallery.map((image) => {
                 return (
                   <>
-                    <div className="t">
+                    <div className="carouselElement">
                       <img
                         key={image}
                         src={image.img}

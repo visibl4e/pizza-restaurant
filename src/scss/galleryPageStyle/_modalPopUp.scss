@@ -77,16 +77,21 @@
     .carousel {
       position: absolute;
       transform: translate(-50%, -50%);
+      scroll-snap-type: inline mandatory;
       display: flex;
+      width: 770px;
       overflow-x: hidden;
-      width: 50%;
+      scroll-snap-type: x mandatory;
     }
-    .t {
+
+    .carouselElement {
+      scroll-snap-align: start;
+
       img {
-        transition: translate 0.4s;
         object-fit: cover;
         width: 770px;
         height: auto;
+        transition: translate 0.8s;
       }
     }
   }

@@ -92,6 +92,7 @@
   }
 }
 label {
+  width: auto;
   display: block;
   margin-top: 30px;
   font-size: 16px;
@@ -99,12 +100,12 @@ label {
 }
 input {
   display: block;
+  width: auto;
+  width: 385px;
   height: 50px;
-  width: 100%;
-
+  padding-left: 15px;
   background-color: rgba(255, 255, 255, 0.07);
   border-radius: 3px;
-
   margin-top: 8px;
   font-size: 14px;
   font-weight: 300;

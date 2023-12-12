@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { AsideBlog } from "./AsideBlog";
 export function Post() {
   const [blogPage, setBlogPage] = useState(null);
+
   const { id } = useParams();
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export function Post() {
                         </span>
                         <span>
                           Posted
-                          <time datetime="2019-04-24T12:47:38+00:00">
+                          <time dateTime="2019-04-24T12:47:38+00:00">
                             {blogPage.data}
                           </time>
                         </span>
@@ -62,8 +63,8 @@ export function Post() {
                       <div className="ingredients">
                         <h3 className="entryHeader">INGREDIENTS</h3>
                         <ul>
-                          {blogPage.ingredients.map((item) => {
-                            return <li>{item}</li>;
+                          {blogPage.ingredients.map((item, index) => {
+                            return <li key={index}>{item}</li>;
                           })}
                         </ul>
                       </div>
@@ -71,12 +72,12 @@ export function Post() {
                     </div>
                   </article>
                 )}
-              </div>
+              </div>{" "}
             </main>
           </div>
           <AsideBlog />
         </div>
-      </div>
+      </div>{" "}
     </>
   );
 }

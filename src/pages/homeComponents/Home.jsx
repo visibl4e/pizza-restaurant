@@ -7,10 +7,6 @@ import { AiOutlineGooglePlus } from "react-icons/ai";
 import { BiSolidQuoteRight } from "react-icons/bi";
 import { CardComponent } from "./CardComponent";
 export function Home() {
-  // const [isHovered, setIsHovered] = useState(false);
-  // const handleMouseOver = () => {
-  //   setIsHovered(true);
-  // };
   const cards = [
     {
       image:

@@ -1,0 +1,106 @@
+@import "../fonts/fonts";
+@import "../colors/colors";
+
+.cardRow {
+  padding: 30px;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+
+  .asideInfo {
+    width: 30%;
+    height: inherit;
+    display: block;
+    .cardName {
+      font-size: $text-3xl30;
+      margin-bottom: 15px;
+    }
+    .cardPrice {
+      font-size: $text-2xl24;
+      margin-bottom: 15px;
+    }
+    .cardSize {
+      font-size: $text-2xl24;
+    }
+    label {
+      input {
+        text-align: center;
+        width: 60%;
+        padding-left: 10px;
+        height: 30px;
+        border: 1px solid #8892b0;
+        border-radius: 5px;
+        &:focus {
+          background-color: rgba(255, 255, 255, 0.07);
+          outline: 1px solid $hover;
+        }
+      }
+    }
+    .addBtn {
+      width: 50%;
+      font-size: $text-lg18;
+      font-weight: $fw700;
+      border-radius: 5px;
+      margin: 10px;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      background-color: $hover;
+      color: white;
+      margin-bottom: 30px;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: 0.15s ease;
+      }
+    }
+    .backShopLnk {
+      font-size: $text-base16;
+      color: $navColor;
+      cursor: pointer;
+      &:hover {
+        transition: 0.15s ease;
+        text-decoration: underline;
+      }
+    }
+    .cardCtegory {
+      width: 30%;
+      font-size: $text-base16;
+      margin-bottom: 20px;
+      &:hover {
+        color: $hover;
+        transition: 0.15s ease;
+        cursor: pointer;
+      }
+    }
+  }
+  .cardImage {
+    position: relative;
+    .magnifierImg {
+      border-radius: 50%;
+      width: 600px;
+      height: 600px;
+      object-fit: contain;
+    }
+    .magnifierImage {
+      width: 200px;
+      height: 200px;
+      border: 1px solid grey;
+    }
+  }
+  .cardDescription {
+    width: 30%;
+    line-height: 1.5;
+    font-size: $text-lg18;
+    h3 {
+      margin-bottom: 15px;
+      font-size: $text-3xl30;
+      font-weight: normal;
+    }
+  }
+}

@@ -32,6 +32,11 @@
 @import "./contactsPageStyles/popupModal";
 @import "./termsPageStyles/termsSection";
 @import "./policyPageStyles/policySection";
+@import "./blogPageStyles.scss/resultSearch";
+@import "./shopPageComponent/shopComponent";
+@import "./shopPageComponent/asideComponent";
+@import "./shopPageComponent/mainComponent";
+@import "./shopPageComponent/cardInfo";
 #root {
   position: relative;
   z-index: 0;

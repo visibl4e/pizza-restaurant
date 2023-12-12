@@ -19,6 +19,7 @@ import { UserAccaunt } from "../authentification/context/UserAccaunt";
 import { useAuth } from "../authentification/context/AuthContext";
 import { useEffect, useState } from "react";
 import { ReusableButton } from "../components/ReusableButton";
+import { BreadCrumbs } from "../components/BreadCrumbs";
 export function NavLayout() {
   const { logoutFn, currentUser } = useAuth();
   const location = useLocation();
@@ -100,7 +101,7 @@ export function NavLayout() {
               </li>
 
               <li>
-                <NavLink to="/cart">
+                <NavLink to="shop/cart">
                   <AiOutlineShoppingCart />
                 </NavLink>
               </li>
@@ -137,13 +138,7 @@ export function NavLayout() {
           className="containerLinks"
           style={location.pathname === "/home" ? { display: "none" } : null}
         >
-          <Link className="home" to="/home">
-            Home
-          </Link>
-          <span>/</span>
-          <Link className="rout" to="/home">
-            Some page
-          </Link>
+          <BreadCrumbs />
         </div>
         <ReusableButton />
       </div>

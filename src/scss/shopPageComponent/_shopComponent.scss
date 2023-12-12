@@ -1,0 +1,15 @@
+.shopComponent {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .shopRow {
+    display: flex;
+
+    justify-content: center;
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

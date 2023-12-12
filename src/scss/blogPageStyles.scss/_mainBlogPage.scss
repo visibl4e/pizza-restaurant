@@ -23,26 +23,50 @@
           display: flex;
           align-items: center;
           .label {
+            display: flex;
+            align-items: center;
             width: 90%;
             .input {
-              // padding: 8px 8px;
               width: 90%;
+              padding-left: 10px;
               border: 1px solid $smallText;
               border-radius: 5px;
+              &::placeholder {
+                color: black;
+              }
             }
           }
-          .searchBtn {
+          .clearBtn {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 8px;
             color: white;
             font-size: $text-base16;
             background-color: $hover;
             border-radius: 5px;
-            margin-left: 12px;
-            margin-top: 40px;
+            margin-left: 10px;
             cursor: pointer;
+            &:hover {
+              opacity: 0.6;
+            }
           }
-          &:hover {
-            opacity: 0.6;
+          .searchBtn {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            color: white;
+            font-size: $text-base16;
+            background-color: $hover;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.6;
+            }
           }
         }
       }

@@ -15,7 +15,10 @@ import { Blog } from "./pages/Blog";
 import { Post } from "./components/blogComponents/Post";
 import { Contacts } from "./pages/contactsComponents/Contacts";
 import { Signup } from "./authentification/signUp";
-
+import { ArchivePage } from "./components/blogComponents/archives/archivePage";
+import { AsideBlog } from "./components/blogComponents/AsideBlog";
+import ShopCart from "./pages/shopComponents/ShopCart";
+import { CardInfo } from "./pages/shopComponents/CardInfo";
 export const router = createBrowserRouter([
   {
     element: <Layout />,
@@ -40,20 +43,41 @@ export const router = createBrowserRouter([
           {
             path: "blog",
             children: [
-              { index: true, element: <Blog /> },
-              { path: ":id", element: <Post /> },
+              {
+                index: true,
+                element: <Blog />,
+              },
+
+              {
+                path: ":id",
+                element: <Post />,
+              },
+              {
+                path: "archive/:archive",
+                element: <ArchivePage />,
+              },
             ],
           },
 
           { path: "contacts", element: <Contacts /> },
-          { path: "shop", element: <Shop /> },
+          {
+            path: "shop",
+            children: [
+              { index: true, element: <Shop /> },
+
+              {
+                path: ":id",
+                element: <CardInfo />,
+              },
+              { path: "cart", element: <ShopCart /> },
+            ],
+          },
           { path: "terms", element: <Terms /> },
           { path: "policy", element: <Privacy /> },
         ],
       },
     ],
   },
-
   {
     path: "signUp",
     element: <Signup />,

@@ -97,16 +97,6 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    .home {
-      margin-right: 10px;
-      color: $hover;
-    }
-    span {
-      margin-right: 10px;
-    }
-    .rout {
-      color: $smallText;
-    }
   }
   .auth {
     background: transparent;
@@ -122,27 +112,24 @@
   color: $hover !important;
 }
 
-// .fixedButtonScroll {
-//   position: fixed;
-//   bottom: 50px;
-//   right: 50px;
-//   height: 50px;
-//   font-size: 40px;
-//   width: 50px;
-//   background: transparent;
-//   cursor: pointer;
-//   z-index: 40;
-//   display: none;
-//   // bottom: 50px,
-//   // right: 50px,
-//   // height: 50px,
-//   // width: 50px,
-//   // fontSize: 40px,
-//   // background: transparent,
-//   // cursor: pointer,
-//   // zIndex: 40,
-// }
-
-// .activeBtnScroll {
-//   display: block;
-// }
+.breadCrumbs {
+  display: flex;
+  align-items: center;
+  .breadcrumbMain {
+    font-weight: 500;
+    font-size: 20px;
+    color: $hover;
+  }
+}
+.breadCrumbText {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: $smallText;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize !important;
+  &:hover {
+    text-decoration: underline;
+  }
+}
