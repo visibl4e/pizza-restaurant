@@ -81,20 +81,19 @@
   }
   .cardImage {
     position: relative;
+    width: 600px;
+    height: 600px;
     .magnifierImg {
       border-radius: 50%;
       width: 600px;
       height: 600px;
       object-fit: contain;
-    }
-    .magnifierImage {
-      width: 200px;
-      height: 200px;
-      border: 1px solid grey;
+      cursor: pointer;
     }
   }
   .cardDescription {
     width: 30%;
+    text-align: center;
     line-height: 1.5;
     font-size: $text-lg18;
     h3 {

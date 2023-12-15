@@ -3,9 +3,9 @@ import { Link, useParams } from "react-router-dom";
 
 export function CardInfo() {
   // zoom in on image
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [showMagnifier, setShowMgnifier] = useState(false);
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [[x, y], setXY] = useState([0, 0]);
+  const [showMagnifier, setShowMagnifier] = useState(false);
+  const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
 
   //fetch card id
   const [product, setProduct] = useState(null);
@@ -18,21 +18,6 @@ export function CardInfo() {
     }
     fetchProducts();
   }, [id]);
-
-  // function to handle mouse move on image
-  const handlerMouseMove = (e) => {
-    const { left, top, width, height } =
-      e.currentTarget.getBoundingClientRect();
-
-    // calculate the position x and y as a percentage based on cursor location
-
-    const x = ((e.pageX - left) / width) * 100;
-    const y = ((e.pageY - top) / height) * 100;
-
-    setPosition({ x, y });
-    setCursorPosition({ x: e.pageX - left, y: e.pageY - top });
-    //update cursor position to store current mouse cursor coordinates relative to mouse location
-  };
 
   return (
     <>
@@ -53,31 +38,50 @@ export function CardInfo() {
               Go back to shopping
             </Link>
           </div>
-          <div
-            className="cardImage"
-            onMouseEnter={() => setShowMgnifier(true)}
-            onMouseLeave={() => setShowMgnifier(false)}
-            onMouseMove={handlerMouseMove}
-          >
-            <img className="magnifierImg" src={product.img} alt="" />
-            {showMagnifier && (
-              <div
-                style={{
-                  position: "absolute",
-                  left: `${cursorPosition.x - 100}px`,
-                  top: `${cursorPosition.y - 100}px`,
-                  pointerEvents: "none",
-                }}
-              >
-                <div
-                  className="magnifierImage"
-                  style={{
-                    backgroundImage: `url(${product.img})`,
-                    backgroundPosition: `${position.x}% ${position.y}%`,
-                  }}
-                ></div>
-              </div>
-            )}
+          <div className="cardImage">
+            <img
+              className="magnifierImg"
+              src={product.img}
+              alt=""
+              onMouseEnter={(e) => {
+                // update image size and turn-on magnifier
+                const elem = e.currentTarget;
+                const { width, height } = elem.getBoundingClientRect();
+                setSize([width, height]);
+                setShowMagnifier(true);
+              }}
+              onMouseMove={(e) => {
+                const elem = e.currentTarget;
+                const { top, left } = elem.getBoundingClientRect();
+
+                const x = e.pageX - left - window.scrollX;
+                const y = e.pageY - top - window.scrollY;
+                setXY([x, y]);
+              }}
+              onMouseLeave={() => {
+                // close magnifier
+                setShowMagnifier(false);
+              }}
+            />
+
+            <div
+              className="magnifierImage"
+              style={{
+                display: showMagnifier ? "" : "none",
+                position: "absolute",
+                pointerEvents: "none",
+                height: "200px",
+                width: "200px",
+                top: `${y - 200 / 2}px`,
+                left: `${x - 200 / 2}px`,
+                border: "1px solid lightgray",
+                backgroundImage: `url(${product.img})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: `${imgWidth * 1.5}px ${imgHeight * 1.5}px`, //zoom 1.5
+                backgroundPositionX: `${-x * 1.5 + 200 / 2}px`,
+                backgroundPositionY: `${-y * 1.5 + 200 / 2}px`,
+              }}
+            ></div>
           </div>
           <div className="cardDescription">
             <h3>Description</h3>

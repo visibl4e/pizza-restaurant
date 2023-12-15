@@ -117,7 +117,7 @@
   ],
   "products": [
     {
-      "id": "black",
+      "id": 1,
       "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dCUyMHNoaXJ0fGVufDB8fDB8fHww",
       "category": "T-shirt",
       "description": "Cotton 180g - 100% organic cotton - Manufacturing labeled Global Organic Textile Standard",
@@ -128,7 +128,7 @@
       "name": "Basic half sleeve T-shirt"
     },
     {
-      "id": "black",
+      "id": 2,
       "img": "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
       "category": "T-shirt",
       "description": "Cotton 180g - 100% organic cotton - Manufacturing labeled Global Organic Textile Standard",
