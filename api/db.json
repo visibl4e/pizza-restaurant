@@ -115,119 +115,214 @@
       "id": 9
     }
   ],
-  "products": [
-    {
-      "id": 1,
-      "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dCUyMHNoaXJ0fGVufDB8fDB8fHww",
-      "category": "T-shirt",
-      "description": "Cotton 180g - 100% organic cotton - Manufacturing labeled Global Organic Textile Standard",
-      "color": "black",
-      "prevPrice": "18$",
-      "size": "L",
-      "newPrice": "15$",
-      "name": "Basic half sleeve T-shirt"
-    },
-    {
-      "id": 2,
-      "img": "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
-      "category": "T-shirt",
-      "description": "Cotton 180g - 100% organic cotton - Manufacturing labeled Global Organic Textile Standard",
-      "color": "black",
-      "prevPrice": "22$",
-      "size": "XL",
-      "name": "Basic half sleeve T-shirt"
-    },
-    {
-      "id": 3,
-      "img": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dCUyMHNoaXJ0fGVufDB8fDB8fHww",
-      "category": "T-shirt",
-      "description": "Cotton 180g - 100% organic cotton - T-shirt Brando blanc manches courtes sur agnesb.eu",
-      "color": "white",
-      "prevPrice": "28$",
-      "size": "XXL",
-      "name": "Basic half sleeve T-shirt"
-    },
-    {
-      "id": 4,
-      "img": "https://images.unsplash.com/photo-1565128354282-a6390fc125b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc5fHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
-      "category": "T-shirt",
-      "description": "The Sven T-shirt is made from organic cotton, making it very comfortable. It is also designed sustainably, using methods that take into account the impact on the environment. Thanks to the cotton, this t-shirt is naturally breathable, very soft and pleasant to wear, while remaining very easy to maintain. Organic cotton has identical properties to standard cotton, but thanks to production without the use of synthetic pesticides, the harmful impact of cotton processing is minimized as much as possible.",
-      "color": "orange",
-      "prevPrice": "17$",
-      "size": "M",
-      "name": "Basic half sleeve T-shirt"
-    },
-    {
-      "id": 5,
-      "img": "https://images.unsplash.com/photo-1625728273603-0404614abb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM0fHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
-      "category": "T-shirt",
-      "description": "The Sven T-shirt is made from organic cotton, making it very comfortable. It is also designed sustainably, using methods that take into account the impact on the environment. Thanks to the cotton, this t-shirt is naturally breathable, very soft and pleasant to wear, while remaining very easy to maintain. Organic cotton has identical properties to standard cotton, but thanks to production without the use of synthetic pesticides, the harmful impact of cotton processing is minimized as much as possible.",
-      "color": "blue",
-      "prevPrice": "31$",
-      "size": "M",
-      "name": " Ringer T – shirt"
-    },
-    {
-      "id": 6,
-      "img": "https://plus.unsplash.com/premium_photo-1682092846845-d41a89d3ce8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
-      "category": "T-shirt",
-      "description": "The Sven T-shirt is made from organic cotton, making it very comfortable. It is also designed sustainably, using methods that take into account the impact on the environment. Thanks to the cotton, this t-shirt is naturally breathable, very soft and pleasant to wear, while remaining very easy to maintain. Organic cotton has identical properties to standard cotton, but thanks to production without the use of synthetic pesticides, the harmful impact of cotton processing is minimized as much as possible.",
-      "color": "red",
-      "prevPrice": "28$",
-      "size": "S",
-      "name": "Basic half sleeve T-shirt"
-    },
-    {
-      "id": 7,
-      "img": "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGdyZWVuJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww",
-      "category": "T-shirt",
-      "description": "Let yourself be tempted by Salomon U! The Salomon U Electrico t-shirt is eco-responsible, its material is GOTS certified organic cotton. Choose from our wide range of summer colors.",
-      "color": "green",
-      "prevPrice": "36$",
-      "size": "XXL",
-      "name": "Yoke neck t-shirts "
-    },
-    {
-      "id": 8,
-      "img": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQyfHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
-      "category": "T-shirt",
-      "description": "Our Best Seller T-shirt is up to date with a modern cut and a European size!!! Pre-shrunk, in combed ringspun cotton - new fine collar in cotton + elastane - Colorfast wash 60°",
-      "color": "grey",
-      "prevPrice": "18$",
-      "size": "XL",
-      "name": "V-neck t-shirt"
-    },
-    {
-      "id": 9,
-      "img": "https://images.unsplash.com/photo-1484517586036-ed3db9e3749e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ3fHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
-      "category": "T-shirt",
-      "description": "The brown t-shirt is a casual and timeless model. Made from compact cotton jersey, it is enhanced with contrasting CD Icon embroidery on the chest. Thanks to its relaxed cut and ribbed round neck, this t-shirt will easily go with all your jeans or sports outfits.",
-      "color": "black",
-      "prevPrice": "26$",
-      "size": "M",
-      "newPrice": "22$",
-      "name": "Basic half sleeve T-shirt"
-    },
-    {
-      "id": 10,
-      "img": "https://images.unsplash.com/photo-1593726891090-b4c6bc09c819?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGJsdWUlMjB0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
-      "category": "T-shirt",
-      "description": "Put on your wolf skin and immerse yourself in a world of absolute comfort with our plain oversized T-shirts. Designed to offer you unlimited freedom of movement, they will accompany you everywhere, no matter what adventure awaits you.The oversized, loose and relaxed cut will allow you to move freely without any restriction. No more feeling trapped in a tight t-shirt, let your body breathe in our plain oversized T-shirts.",
-      "color": "black",
-      "prevPrice": "29$",
-      "size": "S",
-      "name": "Basic half sleeve T-shirt"
-    },
-    {
-      "id": 11,
-      "img": "https://images.unsplash.com/photo-1604006852748-903fccbc4019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Ymx1ZSUyMHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
-      "category": "T-shirt",
-      "description": "100 cotton work t-shirt in 180 g/m². Round neck and shoulder tape.Double stitching at collar and shoulders.Enzyme washed for a softer feel and reduced shrinkage.Wash at 40° degrees.",
-      "color": "blue",
-      "prevPrice": "39$",
-      "size": "XXL",
-      "newPrice": "33$",
-      "name": "Polo collar t-shirt"
-    }
-  ]
+  "products": {
+    "tshirts": [
+      {
+        "id": 1,
+        "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dCUyMHNoaXJ0fGVufDB8fDB8fHww",
+        "category": "T-shirt",
+        "description": "Cotton 180g - 100% organic cotton - Manufacturing labeled Global Organic Textile Standard",
+        "color": "black",
+        "prevPrice": "18$",
+        "size": "L",
+        "newPrice": "15$",
+        "name": "Basic half sleeve T-shirt"
+      },
+      {
+        "id": 2,
+        "img": "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+        "category": "T-shirt",
+        "description": "Cotton 180g - 100% organic cotton - Manufacturing labeled Global Organic Textile Standard",
+        "color": "black",
+        "prevPrice": "22$",
+        "size": "XL",
+        "name": "Basic half sleeve T-shirt"
+      },
+      {
+        "id": 3,
+        "img": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dCUyMHNoaXJ0fGVufDB8fDB8fHww",
+        "category": "T-shirt",
+        "description": "Cotton 180g - 100% organic cotton - T-shirt Brando blanc manches courtes sur agnesb.eu",
+        "color": "white",
+        "prevPrice": "28$",
+        "size": "XXL",
+        "name": "Basic half sleeve T-shirt"
+      },
+      {
+        "id": 4,
+        "img": "https://images.unsplash.com/photo-1565128354282-a6390fc125b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc5fHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
+        "category": "T-shirt",
+        "description": "The Sven T-shirt is made from organic cotton, making it very comfortable. It is also designed sustainably, using methods that take into account the impact on the environment. Thanks to the cotton, this t-shirt is naturally breathable, very soft and pleasant to wear, while remaining very easy to maintain. Organic cotton has identical properties to standard cotton, but thanks to production without the use of synthetic pesticides, the harmful impact of cotton processing is minimized as much as possible.",
+        "color": "orange",
+        "prevPrice": "17$",
+        "size": "M",
+        "name": "Basic half sleeve T-shirt"
+      },
+      {
+        "id": 5,
+        "img": "https://images.unsplash.com/photo-1625728273603-0404614abb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM0fHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
+        "category": "T-shirt",
+        "description": "The Sven T-shirt is made from organic cotton, making it very comfortable. It is also designed sustainably, using methods that take into account the impact on the environment. Thanks to the cotton, this t-shirt is naturally breathable, very soft and pleasant to wear, while remaining very easy to maintain. Organic cotton has identical properties to standard cotton, but thanks to production without the use of synthetic pesticides, the harmful impact of cotton processing is minimized as much as possible.",
+        "color": "blue",
+        "prevPrice": "31$",
+        "size": "M",
+        "name": " Ringer T – shirt"
+      },
+      {
+        "id": 6,
+        "img": "https://plus.unsplash.com/premium_photo-1682092846845-d41a89d3ce8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+        "category": "T-shirt",
+        "description": "The Sven T-shirt is made from organic cotton, making it very comfortable. It is also designed sustainably, using methods that take into account the impact on the environment. Thanks to the cotton, this t-shirt is naturally breathable, very soft and pleasant to wear, while remaining very easy to maintain. Organic cotton has identical properties to standard cotton, but thanks to production without the use of synthetic pesticides, the harmful impact of cotton processing is minimized as much as possible.",
+        "color": "red",
+        "prevPrice": "28$",
+        "size": "S",
+        "name": "Basic half sleeve T-shirt"
+      },
+      {
+        "id": 7,
+        "img": "https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGdyZWVuJTIwdCUyMHNoaXJ0fGVufDB8fDB8fHww",
+        "category": "T-shirt",
+        "description": "Let yourself be tempted by Salomon U! The Salomon U Electrico t-shirt is eco-responsible, its material is GOTS certified organic cotton. Choose from our wide range of summer colors.",
+        "color": "green",
+        "prevPrice": "36$",
+        "size": "XXL",
+        "name": "Yoke neck t-shirts "
+      },
+      {
+        "id": 8,
+        "img": "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQyfHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
+        "category": "T-shirt",
+        "description": "Our Best Seller T-shirt is up to date with a modern cut and a European size!!! Pre-shrunk, in combed ringspun cotton - new fine collar in cotton + elastane - Colorfast wash 60°",
+        "color": "grey",
+        "prevPrice": "18$",
+        "size": "XL",
+        "name": "V-neck t-shirt"
+      },
+      {
+        "id": 9,
+        "img": "https://images.unsplash.com/photo-1484517586036-ed3db9e3749e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ3fHx0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
+        "category": "T-shirt",
+        "description": "The brown t-shirt is a casual and timeless model. Made from compact cotton jersey, it is enhanced with contrasting CD Icon embroidery on the chest. Thanks to its relaxed cut and ribbed round neck, this t-shirt will easily go with all your jeans or sports outfits.",
+        "color": "black",
+        "prevPrice": "26$",
+        "size": "M",
+        "newPrice": "22$",
+        "name": "Basic half sleeve T-shirt"
+      },
+      {
+        "id": 10,
+        "img": "https://images.unsplash.com/photo-1593726891090-b4c6bc09c819?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGJsdWUlMjB0JTIwc2hpcnR8ZW58MHx8MHx8fDA%3D",
+        "category": "T-shirt",
+        "description": "Put on your wolf skin and immerse yourself in a world of absolute comfort with our plain oversized T-shirts. Designed to offer you unlimited freedom of movement, they will accompany you everywhere, no matter what adventure awaits you.The oversized, loose and relaxed cut will allow you to move freely without any restriction. No more feeling trapped in a tight t-shirt, let your body breathe in our plain oversized T-shirts.",
+        "color": "black",
+        "prevPrice": "29$",
+        "size": "S",
+        "name": "Basic half sleeve T-shirt"
+      },
+      {
+        "id": 11,
+        "img": "https://images.unsplash.com/photo-1604006852748-903fccbc4019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Ymx1ZSUyMHQlMjBzaGlydHxlbnwwfHwwfHx8MA%3D%3D",
+        "category": "T-shirt",
+        "description": "100 cotton work t-shirt in 180 g/m². Round neck and shoulder tape.Double stitching at collar and shoulders.Enzyme washed for a softer feel and reduced shrinkage.Wash at 40° degrees.",
+        "color": "blue",
+        "prevPrice": "39$",
+        "size": "XXL",
+        "newPrice": "33$",
+        "name": "Polo collar t-shirt"
+      }
+    ],
+
+    "hats": [
+      {
+        "img": "https://www.icewear.is/pub/media/catalog/product/cache/ecc700ac95a539de9e0ef2424af8fc0e/h/v/hverir-acryl-hat-94240-1005-1_1.jpg",
+        "category": "Hats",
+        "description": "Hverir hat is a warm and comfortable hat, made out of 55% Acrylic/ 36% Polyester/ 5% Wool/ 4% Spandex. This nice looking hat is 27cm in width (measured flat).",
+        "color": "beige",
+        "prevPrice": "25$",
+        "name": "Polo Ralph Lauren "
+      },
+      {
+        "img": "https://www.icewear.is/pub/media/catalog/product/cache/ecc700ac95a539de9e0ef2424af8fc0e/h/v/hverir-acryl-hat-94240-2045-1_1.jpg",
+        "category": "Hats",
+        "description": "Hverir hat is a warm and comfortable hat, made out of 55% Acrylic/ 36% Polyester/ 5% Wool/ 4% Spandex. This nice looking hat is 27cm in width (measured flat).",
+        "color": "dark red",
+        "prevPrice": "25$",
+        "name": " Hverir Knitted Hat"
+      },
+      {
+        "img": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F4c%2F81%2F4c818dfed6f256eac617c9c397a31df381080a02.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_accessories_hats_beanies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+        "category": "Hats",
+        "description": "Soft, rib-knit hat with foldover cuff. Polyester 50%, Acrylic 50%",
+        "color": "black",
+        "prevPrice": "19$",
+        "name": "Parajumpers Black Ribed Wool Beanie"
+      },
+      {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDV-fl-B6ByBiOnnZweO8pts1S1kucsThj-kKXrYz0Yf2j4b2m9iaM9bWR26CkB2ss8Xg&usqp=CAU",
+        "category": "Hats",
+        "description": "Tassel-less hat with fleece around the ears. 50% Wool, 50% Acryl",
+        "color": "grey",
+        "prevPrice": "15$",
+        "name": "Chaos Evo Beanie "
+      },
+      {
+        "img": "https://bta.scene7.com/is/image/brownthomas/2000348266_99?$product_tile_plp$&$jpg$",
+        "category": "Hats",
+        "description": "Embracing its Nordic heritage without limiting itself to traditional minimalism, Ganni seeks a more effortless and playful approach to design. Leaving plenty of room for experimentation, the label's fresh approach to femininity injects bold colour palettes and comfortable fits into your everyday wardrobe.",
+        "color": "beige",
+        "prevPrice": "28$",
+        "newPrice": "22$",
+        "name": " Ganni Beanie "
+      }
+    ],
+
+    "hoodies": [
+      {
+        "img": "https://img01.ztat.net/article/spp-media-p1/2433f2b6c4253112934566fa5a365998/66f262c68685411bb1fae076a975d2a5.jpg?imwidth=762&filter=packshot",
+        "category": "Hoodies",
+        "description": "80% coton, 20% polyester. Machine wash at 40°C, do not tumble dry. Hood with drawstring. Elastic waist",
+        "color": "black",
+        "prevPrice": "49$",
+        "size": "M",
+        "name": "CCS Staple Pullover Hoodie"
+      },
+      {
+        "img": "https://media.boohoo.com/i/boohoo/bmm24318_black_xl/male-black-oversized-man-signature-over-the-head-hoodie/?w=900&qlt=default&fmt.jp2.qlt=70&fmt=auto&sm=fit",
+        "category": "Hoodies",
+        "description": "Hoodies and sweatshirts are essential for boxing those clean, comfortable layers. Hoodies work as a classic mid-layer or a standalone everyday basic when the weather is a little bit warmer. When you want a minimal colourway to effortlessly finish off your outfit, choosing a sweatshirt is always a solid option. A staple in your wardrobe already, jersey hoodies and sweats are a failsafe grab-and-go for any occasion. Find the perfect casual top to complement your off-duty look in our selection of hoodies and sweats for men. 100% Cotton",
+        "color": "black",
+        "prevPrice": "58$",
+        "size": "XXL",
+        "newPrice": "47$",
+        "name": "Sweatshirt Midnight Blue"
+      },
+      {
+        "img": "https://www.snipes.fr/dw/image/v2/BDCB_PRD/on/demandware.static/-/Sites-snse-master-eu/default/dw90e45d39/2193355_P.jpg?sw=450&sh=450&sm=fit&sfrm=png",
+        "category": "Hoodies",
+        "description": "This model fits entirely into this category and seduces with its quality, comfort and style. The magic formula is this: a thick hood with a drawstring, a nice and thick fabric, a chill cut, and voilà! For a sweatshirt that is both fresh and timeless! Just treat yourself!",
+        "color": "beige",
+        "prevPrice": "42$",
+        "size": "S",
+        "name": "Metal Signature Teddy Os Hoodie"
+      },
+      {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdWsEE9Wh1JdoMPBwaP--_-E5CShcthcAa4w&usqp=CAU",
+        "category": "Hoodies",
+        "description": "This collection is for the crew. See, without them, The Shop is just a place.  The crew brings it to life through ideas, conversations, inspirations, and motivations–and makes it not just a place, but The Shop you remember. The Shop isn’t the Shop without the person in the chair, behind the chair, or waiting for the chair.  The strength is always in the crew.100% cotton brushed-back fleece. Cold Machine Wash. Ribbed hem and cuffs",
+        "color": "blue",
+        "prevPrice": "38$",
+        "size": "XL",
+        "name": "PIPPA EMB - Hoodie"
+      },
+      {
+        "img": "https://uninterrupted.com/cdn/shop/files/SHOP_HOODIES-08.jpg?v=1686803335&width=540",
+        "category": "Hoodies",
+        "description": "This collection is for the crew. See, without them, The Shop is just a place.  The crew brings it to life through ideas, conversations, inspirations, and motivations–and makes it not just a place, but The Shop you remember. The Shop isn’t the Shop without the person in the chair, behind the chair, or waiting for the chair.  The strength is always in the crew. 100% cotton brushed-back fleece. Cold Machine Wash. Ribbed hem and cuffs",
+        "color": "green",
+        "prevPrice": "51$",
+        "size": "XXL",
+        "name": "SHEIN EZwear Casual"
+      }
+    ]
+  }
 }

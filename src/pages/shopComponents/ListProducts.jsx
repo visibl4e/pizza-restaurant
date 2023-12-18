@@ -11,21 +11,26 @@ export function ListProducts() {
         {product &&
           product.map((item, index) => {
             return (
-              <Link
-                style={{ color: "grey" }}
-                key={index}
-                to={`/shop/${item.id}`}
-              >
-                <div className="productCard">
-                  <img src={item.img} />
-                  <div className="infoCard">
-                    <h3>{item.name}</h3>
-                    <p className="category">{item.category}</p>
-                    <p className="price">{item.prevPrice}</p>
-                    <button className="addToCart">Add to cart</button>
-                  </div>
-                </div>
-              </Link>
+              <>
+                {item.tshirts &&
+                  item.tshirts.map((item) => (
+                    <Link
+                      style={{ color: "grey" }}
+                      key={index}
+                      to={`/shop/${item.id}`}
+                    >
+                      <div key={index} className="productCard">
+                        <img src={item.img} />
+                        <div className="infoCard">
+                          <h3>{item.name}</h3>
+                          <p className="category">{item.category}</p>
+                          <p className="price">{item.prevPrice}</p>
+                          <button className="addToCart">Add to cart</button>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+              </>
             );
           })}
       </div>

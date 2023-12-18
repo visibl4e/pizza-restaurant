@@ -82,9 +82,12 @@ export function ProductCategory() {
               {product &&
                 product.map((item, index) => (
                   <Link key={index} to={`/shop/${item.id}`}>
-                    <li>
-                      {item.name} <img src={item.img} alt="" />
-                    </li>
+                    {item.tshirts &&
+                      item.tshirts.map((item, index) => (
+                        <li key={index}>
+                          {item.name} <img src={item.img} alt="" />
+                        </li>
+                      ))}
                   </Link>
                 ))}
             </ul>
@@ -112,9 +115,12 @@ export function ProductCategory() {
               {product &&
                 product.map((item, index) => (
                   <Link key={index} to={`/shop/${item.id}`}>
-                    <li>
-                      {item.name} <img src={item.img} alt="" />
-                    </li>
+                    {item.hoodies &&
+                      item.hoodies.map((item, index) => (
+                        <li key={index}>
+                          {item.name} <img src={item.img} alt="" />
+                        </li>
+                      ))}
                   </Link>
                 ))}
             </ul>
@@ -142,9 +148,12 @@ export function ProductCategory() {
               {product &&
                 product.map((item, index) => (
                   <Link key={index} to={`/shop/${item.id}`}>
-                    <li>
-                      {item.name} <img src={item.img} alt="" />
-                    </li>
+                    {item.hats &&
+                      item.hats.map((item, index) => (
+                        <li key={index}>
+                          {item.name} <img src={item.img} alt="" />
+                        </li>
+                      ))}
                   </Link>
                 ))}
             </ul>

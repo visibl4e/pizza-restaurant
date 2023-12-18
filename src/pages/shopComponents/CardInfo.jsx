@@ -12,13 +12,16 @@ export function CardInfo() {
   const { id } = useParams();
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch(`http://localhost:3000/products/${id}`);
+      const response = await fetch(
+        `http://localhost:3000/products/tshirts/${id}`
+      );
       const data = await response.json();
+
       setProduct(data);
+      console.log(product);
     }
     fetchProducts();
   }, [id]);
-
   return (
     <>
       {product && (
@@ -39,30 +42,32 @@ export function CardInfo() {
             </Link>
           </div>
           <div className="cardImage">
-            <img
-              className="magnifierImg"
-              src={product.img}
-              alt=""
-              onMouseEnter={(e) => {
-                // update image size and turn-on magnifier
-                const elem = e.currentTarget;
-                const { width, height } = elem.getBoundingClientRect();
-                setSize([width, height]);
-                setShowMagnifier(true);
-              }}
-              onMouseMove={(e) => {
-                const elem = e.currentTarget;
-                const { top, left } = elem.getBoundingClientRect();
+            <>
+              <img
+                className="magnifierImg"
+                src={product.img}
+                alt=""
+                onMouseEnter={(e) => {
+                  // update image size and turn-on magnifier
+                  const elem = e.currentTarget;
+                  const { width, height } = elem.getBoundingClientRect();
+                  setSize([width, height]);
+                  setShowMagnifier(true);
+                }}
+                onMouseMove={(e) => {
+                  const elem = e.currentTarget;
+                  const { top, left } = elem.getBoundingClientRect();
 
-                const x = e.pageX - left - window.scrollX;
-                const y = e.pageY - top - window.scrollY;
-                setXY([x, y]);
-              }}
-              onMouseLeave={() => {
-                // close magnifier
-                setShowMagnifier(false);
-              }}
-            />
+                  const x = e.pageX - left - window.scrollX;
+                  const y = e.pageY - top - window.scrollY;
+                  setXY([x, y]);
+                }}
+                onMouseLeave={() => {
+                  // close magnifier
+                  setShowMagnifier(false);
+                }}
+              />
+            </>
 
             <div
               className="magnifierImage"
@@ -89,6 +94,7 @@ export function CardInfo() {
           </div>{" "}
         </div>
       )}
+      s
     </>
   );
 }
